@@ -54,3 +54,14 @@ we commit features A+B separately from C beacuse these are different features an
 my local and remote branch would cause merge conflict
 use git fetch to check remote changes before pushing
 
+# 2.2.9. In answers.md : Did this merge create a merge commit or was it a fast-forward? How can you tell?
+it created fast forward, I can tell because there is no extra merge commit on log
+
+# Why did this conflict happen? (Reference the rule: same file, same line) Would there have been a conflict if the two branches edited different lines of team.txt ? Would there have been a conflict if one branch edited team.txt and the other edited about.md ?
+The conflict happened because both branches edited the line 2 in team.txt
+
+No there would be no conflict if the branches edited different lines of team.txt
+
+No there would be no conflict if one branch edited team.txt and the other edited about.md
+
+
