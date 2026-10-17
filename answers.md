@@ -47,15 +47,27 @@ when we switch branch, head points to the new branch's commit
 node_modules/
 *.env
 
+
+![Screenshot Exercise 2.1](screenshots/screenshotsexercise-2.1.png)
+
 # 2.2.6. In answers.md , explain: Why did we commit A+B separately from C? When would you want to split commits this way?
 we commit features A+B separately from C beacuse these are different features and we want to keep the commit history clean for later cleaning or debugging purposes
+
+# 2.2.9. In answers.md : Did this merge create a merge commit or was it a fast-forward? How can you tell?
+it created fast forward, I can tell because there is no extra merge commit on log
+
+## Exercise 2.2a
+![Screenshot Exercise 2.2a](screenshots/screenshotsexercise-2.2a.png)
+
+## Exercise 2.2b
+![Screenshot Exercise 2.2b](screenshots/screenshotsexercise-2.2b.png)
 
 # 2.3.6. In answers.md , answer: What would happen if you made a local commit first WITHOUT pulling? What command helps you check?
 my local and remote branch would cause merge conflict
 use git fetch to check remote changes before pushing
 
-# 2.2.9. In answers.md : Did this merge create a merge commit or was it a fast-forward? How can you tell?
-it created fast forward, I can tell because there is no extra merge commit on log
+## Exercise 2.3
+![Screenshot Exercise 2.3](screenshots/screenshotsexercise-2.3.png)
 
 # Why did this conflict happen? (Reference the rule: same file, same line) Would there have been a conflict if the two branches edited different lines of team.txt ? Would there have been a conflict if one branch edited team.txt and the other edited about.md ?
 The conflict happened because both branches edited the line 2 in team.txt
@@ -63,8 +75,14 @@ The conflict happened because both branches edited the line 2 in team.txt
 No there would be no conflict if the branches edited different lines of team.txt
 
 No there would be no conflict if one branch edited team.txt and the other edited about.md
+## Exercise 3.1b
+![Screenshot Exercise 3.1b](screenshots/screenshotsexercise-3.1b.png)
 
+## Exercise 3.2a
+![Screenshot Exercise 3.2a](screenshots/screenshotsexercise-3.2a.png)
 
+## Exercise 3.2b
+![Screenshot Exercise 3.2b](screenshots/screenshotsexercise-3.2b.png)
 
 # What is the purpose of a pull request? Why not just merge directly? Name two things a reviewer should check in a pull request. What is the difference between a merge commit and a fast-forward merge?
 A pull request lets others review changes before merging
@@ -73,6 +91,12 @@ Whether the code works correctly.
 Whether the code is readable and has no obvious errors.
 
 A merge commit creates a new commit to combine two branches. A fast-forward merge simply moves the branch forward without creating a new commit.
+
+## Exercise 4.1a
+![Screenshot Exercise 4.1a](screenshots/screenshotsexercise-4.1a.png)
+
+## Exercise 4.1b
+![Screenshot Exercise 4.1b](screenshots/screenshotsexercise-4.1b.png)
 
 # Part 5 — Merge Conflict Scenarios (10 marks)
 No coding here — read each scenario and write your answers in answers.md . 2 marks per
