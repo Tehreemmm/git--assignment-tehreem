@@ -65,3 +65,45 @@ No there would be no conflict if the branches edited different lines of team.txt
 No there would be no conflict if one branch edited team.txt and the other edited about.md
 
 
+
+# What is the purpose of a pull request? Why not just merge directly? Name two things a reviewer should check in a pull request. What is the difference between a merge commit and a fast-forward merge?
+A pull request lets others review changes before merging
+
+Whether the code works correctly.
+Whether the code is readable and has no obvious errors.
+
+A merge commit creates a new commit to combine two branches. A fast-forward merge simply moves the branch forward without creating a new commit.
+
+# Part 5 — Merge Conflict Scenarios (10 marks)
+No coding here — read each scenario and write your answers in answers.md . 2 marks per
+question.
+
+# Scenario A. Ahmed creates a branch and changes line 10 of index.html . Sara creates a different branch and changes line 1 of the same index.html . Both merge into main . Will there be a conflict? Why or why not?
+
+No there will be no conflict if ahmed and sara changed different lines in the same file
+
+# Scenario B. Ali edits style.css on his branch. Fatima edits app.js on her branch. Both merge into main . Will there be a conflict? Why or why not?
+No beacuse ali and fatima changed different files
+
+
+# Scenario C. DevA changes line 5 of config.py to DEBUG = True . Dev B changes line 5 of config.py to DEBUG = False . Both merge into main . Will there be a conflict? If yes, show exactly what the conflict markers would look like in the file.
+yes there will be a conflict because both changed same lines
+
+
+# Scenario D. You run git merge feature/new-ui and see this output:
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+Write out the exact steps (commands included) you would take to resolve this conflict
+and finish the merge.
+
+open index.html and find conflict markers
+edit file to keep correct changes
+remove conflict markers and save
+then stage and commit and check status
+
+we can also do it by checking conflicts on github, ask any ai model to rewrite the correct code resolve conflicts and merge again
+
+
+# Scenario E. Your teammate says: "I always do git pull before I start working every morning." Is this a good practice? Explain why or why not, and what could go wrong if they skip it.
+yes it is a good practice beacuse it gets the latest changes from remote if avaialable
